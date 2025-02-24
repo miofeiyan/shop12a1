@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa Hàng Quần Áo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* Products Section */
+.products {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 15px 0;
+}
+
+.product-item button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Cửa Hàng Quần Áo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="products">
+        <div class="container">
+            <h2>Sản Phẩm Mới</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="https://product.hstatic.net/1000369857/product/ao_thun_co_tron_ats08_mau_nau_1_026b0a00b02f45bfafa91b13c0109f2c.jpg" alt="Sản phẩm 1">
+                    <h3>Áo Thun Nam</h3>
+                    <p>Giá: 250.000 VNĐ</p>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+                <div class="product-item">
+                    <img src="https://cdn.kkfashion.vn/20870-large_default/quan-jeans-nu-ong-suong-lung-cao-qj-09.jpg" alt="Sản phẩm 2">
+                    <h3>Quần Jean Nữ</h3>
+                    <p>Giá: 300.000 VNĐ</p>
+                    <button class="add-to-cart">Thêm vào giỏ</button>
+                </div>
+                <!-- Add more products here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cửa Hàng Quần Áo. Tất cả quyền được bảo lưu.</p>
+            <p> Đinh Tấn Cường - 12A1</p>
+        </div>
+    </footer>
+	
+    <script src="script.js"></script>
+</body>
+</html>
